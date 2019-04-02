@@ -49,7 +49,9 @@
             width: 31.33%;
             height: 20vh;
             margin: 1%;
-            background: #DEE1E6;
+            background: white;
+            box-shadow: 0 3px 10px #D9D9D9;
+            border-radius: 5px;
         }
 
         .tuan_first_item {
@@ -63,6 +65,7 @@
         .daojia {
             margin: 7vh 5vw 2vh;
         }
+
 
     </style>
 
@@ -94,9 +97,9 @@
                     </div>
                 </div>
 
-                <div style="width: 20%; height: 100%; margin-top: 15px; margin-right: 5px">
+                <a href="http://www.enjoysix.cn/mobile/community/index" style="width: 20%; height: 100%; margin-top: 15px; margin-right: 5px">
                     <span style="font-size: 0.8rem">修改 <i class="fa fa-pencil-square-o fa-1x"></i></span>
-                </div>
+                </a>
 
             </div>
 
@@ -132,7 +135,8 @@
                 <div style="width: 60%; height: 100%; display: flex; flex-direction: column; align-items: flex-end; margin-right: 25px; margin-top: -15px">
                     <div>慈善金：<span style="color: #F9872C; font-weight: bold"><{:round($helpmoney/100,2)}>元</span></div>
                     <div>
-                        <img style="width: 12vw; margin: 5px 25px 0 auto" src="http://tu1.027cgb.com/609575/six/medical2.png" alt="">
+                        <img style="width: 12vw; margin: 5px 25px 0 auto"
+                             src="http://tu1.027cgb.com/609575/six/medical2.png" alt="">
                     </div>
 
                 </div>
@@ -166,11 +170,27 @@
         <div class="tuan_bg">
             <div style="height:1px; width: 100%; background: white"></div>
             <div class="tuan_content">
-                <div class="tuan_first_item"></div>
+                <a href="https://www.enjoysix.cn/mobile/ele/shop/shop_id/71.html?from=singlemessage" class="tuan_first_item"></a>
                 <foreach name="daojialist" item="var">
-                    <div class="tuan_item">
-                        <{:round($var['price']/100,2)}>
-                    </div>
+                    <a href="https://www.enjoysix.cn/mobile/ele/shop/shop_id/71.html?from=singlemessage" class="tuan_item">
+                        <div style="height: 12vh">
+                            <img style="height: 12vh; width: 100%; float: right" src="<{:config_img($var['photo'])}>" alt="">
+                            <img style="width: 40%; float: right; margin-top: -7vh" src="http://tu1.027cgb.com/609575/six/WechatIMG42.png" alt="">
+                        </div>
+                        <div style="margin: 3px 3px 5px 3px">
+                            <div style="display: flex; justify-content: space-between">
+                                <div>
+                                    <span style="font-size: 12px; color: #4ca5ef"><{:round($var['price']/100,2)}> 元</span>
+                                </div>
+                                <div>
+                                    <span style="font-size: 8px; color: #8c8c8c">月售:<{$var.sold_num}>份</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span style="font-size: 12px"><{:bao_msubstr($var['product_name'],0,7,false)}></span>
+                            </div>
+                        </div>
+                    </a>
                 </foreach>
 
             </div>
