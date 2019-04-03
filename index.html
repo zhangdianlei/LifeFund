@@ -8,7 +8,7 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
     <meta content="telephone=no" name="format-detection"/>
     <!--<link href="https://syy.freep.cn/609575/six/newindex_style.css" rel="stylesheet" type="text/css"/>-->
-    <link href="https://syy.freep.cn/609575/six/newindex_style3.css" rel="stylesheet" type="text/css"/>
+    <link href="https://syy.freep.cn/609575/six/newindex_style5.css" rel="stylesheet" type="text/css"/>
     <!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
 
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
@@ -27,8 +27,8 @@
         }
 
         .tuan_bg {
-            margin: 0 5vw 0;
-            width: 90vw;
+            margin: 0 3vw 0;
+            width: 94vw;
             height: 38vh;
             /*background: #D8D8D8;*/
             background: url("https://syy.freep.cn/609575/six/daojia_bg.jpg") no-repeat;
@@ -36,7 +36,7 @@
         }
 
         .tuan_content {
-            width: 84vw;
+            /*width: 84vw;*/
             height: 42vh;
             background: #F9F9F9;
             background: transparent;
@@ -63,7 +63,7 @@
         }
 
         .daojia {
-            margin: 7vh 5vw 2vh;
+            margin: 7vh 3vw 2vh;
         }
 
 
@@ -92,7 +92,7 @@
                              src="<{:config_img($MEMBER['face'])}>" alt="">
                     </div>
                     <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 15px; margin-left: 5px   ">
-                        <span style="font-size: 1.2rem; font-weight: bold"><{$MEMBER.nickname}></span>
+                        <span style="font-size: 1.2rem; font-weight: bold"><{:bao_msubstr($MEMBER['nickname'],0,10,false)}></span>
                         <!--<span style="font-size: 0.9rem">市直一区</span>-->
                     </div>
                 </div>
@@ -203,23 +203,23 @@
             </div>
 
             <div style="display: flex">
-                <div style="width: 30vw; height: 45vw; background: #F0F0F0; margin-top: 1vw; border-radius: 10px">
-
+                <div style="width: 30vw; height: 45vw; margin-top: 1vw; border-radius: 10px">
+                    <img style="width: 30vw; height: 45vw; margin-top: 1vw; border-radius: 10px" src="http://tu1.027cgb.com/609575/six/wherego.png" alt="">
                 </div>
-                <div>
-                    <div style="width: 40vw; height: 22vw; background: #F0F0F0; margin: 1vw; border-radius: 10px">
-
+                <div style="margin-top: 1vw">
+                    <div style="width: 40vw; height: 22vw; margin: 1vw; border-radius: 10px">
+                        <img style="width: 40vw; height: 22vw; border-radius: 10px" src="http://tu1.027cgb.com/609575/six/huanxi.png" alt="">
                     </div>
-                    <div style="width: 40vw; height: 22vw; background: #F0F0F0; margin: 1vw; border-radius: 10px">
-
+                    <div style="width: 40vw; height: 22vw; margin: 1vw; border-radius: 10px">
+                        <img style="width: 40vw; height: 22vw; border-radius: 10px" src="http://tu1.027cgb.com/609575/six/lingyun.png" alt="">
                     </div>
                 </div>
-                <div>
-                    <div style="width: 20vw; height: 22vw; background: #F0F0F0; margin-top: 1vw; border-radius: 10px">
-
+                <div style="margin-top: 1vw">
+                    <div style="width: 22vw; height: 22vw; margin-top: 1vw; border-radius: 10px">
+                        <img style="width: 22vw; height: 22vw; border-radius: 10px" src="http://tu1.027cgb.com/609575/six/cute.png" alt="">
                     </div>
-                    <div style="width: 20vw; height: 22vw; background: #F0F0F0; margin-top: 1vw; border-radius: 10px">
-
+                    <div style="width: 22vw; height: 22vw; margin-top: 1vw; border-radius: 10px">
+                        <img style="width: 22vw; height: 22vw; border-radius: 10px" src="http://tu1.027cgb.com/609575/six/more.png" alt="">
                     </div>
                 </div>
             </div>
